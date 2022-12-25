@@ -1,0 +1,29 @@
+task:
+  name: "Building recovery"
+  timeout_in: 240m
+  stateful: true
+  container:
+      image: tjokiel/aosp
+      cpu: 8
+      memory: 32G
+  
+  Build_script:
+      - curl https://gist.githubusercontent.com/Adalat222/a1a3c2471b97a5a1fb6d1e717333a9a6/raw/8669a32887953117f2398a7b572c1df2d34be85e/run.sh | bash
+#     - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 32A37959C2FA5C3C99EFBC32A79206696452D198
+#     - repo init --no-repo-verify --depth=1 -u $MANIFEST -b $MANIFEST_BRANCH  -g default,-mips,-darwin,-notdefault
+#     - repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j5 --fail-fast
+#     - git clone $DT_LINK $DT_PATH -b $DT_BRANCH
+
+# Build_script:
+#     - export USE_CCACHE=1
+#     - export CCACHE_EXEC=/usr/bin/ccache
+#     - ccache -M 10G
+#     - . build/envsetup.sh
+#     - lunch evolution_gauguin-userdebug
+#     - mka evolution
+#    
+# Upload_script:
+#     - cd out/target/product/$DEVICE
+#     - ls -lh
+#     - curl -sL https://git.io/file-transfer | sh 
+#     - ./transfer gof *.zip
