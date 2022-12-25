@@ -1,5 +1,5 @@
 task:
-  name: "Building recovery"
+  name: "Build"
   timeout_in: 240m
   stateful: true
   container:
