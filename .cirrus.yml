@@ -8,4 +8,4 @@ task:
       memory: 32G
   
   Build_script:
-      - curl https://gist.githubusercontent.com/Adalat222/a1a3c2471b97a5a1fb6d1e717333a9a6/raw/8669a32887953117f2398a7b572c1df2d34be85e/run.sh | bash
+      - curl https://gist.githubusercontent.com/Adalat222/bcf5ac0862fb16b218e5c33d8322d4ee/raw/d71941f15a27c85667ae48d30d45f6472f875447/build.sh | bash
