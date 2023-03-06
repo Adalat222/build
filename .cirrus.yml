@@ -7,4 +7,4 @@ task:
       memory: 32G
   
   Build_script:
-      - curl https://gist.githubusercontent.com/Adalat222/bcf5ac0862fb16b218e5c33d8322d4ee/raw/296016b72a2b267dcc2ff732acaa3884e747d305/build.sh | bash
+      - curl https://gist.githubusercontent.com/Adalat222/81f81be737078de2656685faec7b8c8f/raw/01a68e6a168018540a1fb99b16e9212f6ef99547/Elixir.sh | bash
